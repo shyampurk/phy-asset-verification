@@ -43,7 +43,7 @@ The above "Getting Started" guide also contains instructions for updating the Li
 
 Open Arduino IDE and go to Sketch -> Include Library -> Manage Libraries. Find PubSubClient by Nick O’Leary and install it.
 
-#### STEP 3 : BLE Application Application Code Install
+#### STEP 3 : BLE Application Application Code Config
 
 Clone this repository and open the [application code for BLE gateway](code/hardware/asset_tracking.ino)
 
@@ -61,3 +61,30 @@ You will have to edit the following Macros/variables in the source code as per y
   
   •	BEACON_MAC_ADDR_1 , BEACON_MAC_ADDR_2 , BEACON_MAC_ADDR_3 (Line 21,22,23) - Known mac-addresses of the ble end nodes.
     
+    
+#### STEP 4 : BLE Application Application Code Install
+
+Connect your LinkItONE device via USB cable and select Serial Debug COM port in Arduino IDE. Compile and Upload your sketch to the device using “Upload” button. Once the application starts, it will try to connect to ThingsBoard server using MQTT. Refer to the steps below to deploy ThingsBoard server to receive the messages from the Linkit ONE.
+
+#### Troubleshooting
+
+When the application is running, you can connect your device to Serial Debug COM port in Arduino IDE and open “Serial Monitor” in order to view debug information produced by serial output.
+
+
+### Build Setup For Application Server
+
+[ThingsBoard](https://thingsboard.io/) is a open source IoT platform. For this project we have used a Ubuntu server installed with ThingsBoard for orchestrating the messages between the assets and the dashboard.
+
+#### STEP 1 : Installing ThingsBoard
+
+Install the Thingsboard service [as per your Operating System](https://thingsboard.io/docs/user-guide/install/installation-options/) 
+
+#### STEP 2 : Getting Started
+
+Follow this [guide](https://thingsboard.io/docs/getting-started-guides/helloworld/) to get started 
+
+#### STEP 3 : Configuration for Asset Tracking
+
+Open the [JavaScript code](code/thingsboard/asset_tracking.js) . Open the widget of Factory Asset Dashboard and click on edit button on the card.
+
+<img src="screenshots/SS-1.png">
