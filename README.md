@@ -85,6 +85,20 @@ Follow this [guide](https://thingsboard.io/docs/getting-started-guides/helloworl
 
 #### STEP 3 : Configuration for Asset Tracking
 
-Open the [JavaScript code](code/thingsboard/asset_tracking.js) . Open the widget of Factory Asset Dashboard and click on edit button on the card.
+Open the widget of Factory Asset Dashboard and click on edit button on the card.
 
 <img src="screenshots/SS-1.png">
+
+Open the [JavaScript code](code/thingsboard/asset_tracking.js). Paste the JavaScript code in the JavaScript window , indicated with "A1" below. Similarly, open the [CSS stylesheet](code/thingsboard/asset_tracking.css) and paste it in the CSS window as shown with label "A2" below.
+
+<img src="screenshots/SS-2.png">
+
+#### STEP 4 : Setup Dashboard
+
+Go to “Devices” section and locate “FACTORY ASSET”, open device details and switch to “Attributes” tab. If all is configured correctly you should be able to see status of assets in attributes and their latest values in the table as shown in the picture.
+
+<img src="screenshots/SS-3.png">
+
+And then you can visualize with a proper UI in Dashboard window as shown in the picture.
+
+<img src="screenshots/SS-4.png">
