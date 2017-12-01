@@ -138,9 +138,7 @@ Now we have to create a widget for displaying the status of each BLE node.  Head
 
 Follow the below steps to create a customized widget for displaying the presence status of the end nodes.
 
-##### Step  1. Under the "WIDGET LIBRARY" screen, click on the red "+" icon in the bottom right and choose "Create New Widgets 
-
-Bundle".
+##### Step  1. Under the "WIDGET LIBRARY" screen, click on the red "+" icon in the bottom right and choose "Create New Widgets Bundle".
 
 <img src="screenshots/SS-10.jpg">
 
@@ -165,9 +163,7 @@ You will see the card representing the newly created widget bundle
 <img src="screenshots/SS-14.jpg">
 
 
-##### Step 5. Select "Cards" from the "Current Bundle" dropdown option and choose the third style from the four available 
-
-styles.
+##### Step 5. Select "Cards" from the "Current Bundle" dropdown option and choose the third style from the four available styles.
 
 <img src="screenshots/SS-15.jpg">
 
@@ -184,7 +180,7 @@ styles.
 
 This is the predefined widget that we selected for dislaying the aseet status but we will modify it.
 
-##### Step 8. THis will open up a few widgets showing random data. We will use the Temp widget for our BLE end nodes.
+##### Step 8. This will open up a few widgets showing random data. We will start with the Temp widget for our BLE end nodes.
 
 <img src="screenshots/SS-18.jpg">
 
@@ -202,9 +198,11 @@ This will open up the code editing screen for the widget.
 
 <img src="screenshots/SS-21.jpg">
 
-##### Step 11..Copy the <js> code and <css> code and paste it in the respective code windoow replacing the existing code 
+##### Step 11..Copy the Javascript code and CSS code and paste it in the respective code windoow replacing the existing code completely and click on the "SAVE AS" button on the top.
 
-completely and click on the "SAVE AS" button on the top.
+Replace the default JS code with our [custom JS code](code/thingsboard/asset_tracking.js)
+
+Replace the default CSS code with our [custom CSS code](code/thingsboard/asset_tracking.css)
 
 <img src="screenshots/SS-22.jpg">
 
@@ -216,12 +214,83 @@ Once done, you will see your newly created widget as shown below
 
 <img src="screenshots/SS-24.jpg">
 
-##### Step 13. Now, head over to the "WIDGETS LIBRARY" and select "FACTORY ASSET". You will now see the asset widget as per 
+##### Step 13. Now, head over to the "WIDGETS LIBRARY" and select "FACTORY ASSET". 
 
-the new design and style that we did in step 10 and 11 above.
+You will now see the asset widget as per the new design and style that we did in step 10 and 11 above.
 
 <img src="screenshots/SS-25.jpg">
 
 You have successfully created the widget. Now lets add it to a dashboard.
 
 
+#### Creating the Dashboard
+
+We already defined the dashboard as part of step 6 of widget creation. Now we will add the widget to the dashboard.
+
+##### Step 1. Go to the "DEVICES" screen and click on the "FACTORY ASSET DEVICE"
+
+<img src="screenshots/SS-26.jpg">
+
+##### Step 2. Select "ATTRIBUTES" tab, check the first data record and click on "SHOW ON WIDGET"
+
+<img src="screenshots/SS-27.jpg">
+
+##### Step 3. Select "FACTORY ASSET" from the "Current Bundle" dropdown and click on "ADD TO DASHBOARD"
+
+<img src="screenshots/SS-28.jpg">
+
+##### Step 4. Select the "Select existing dashboard" option and choose "FACTORY ASSET DASHBOARD" and click "ADD"
+
+<img src="screenshots/SS-29.jpg">
+
+##### Step 5. Now go to the "DASHBOARDS" screen and select "FACTORY ASSET DASHBOARD"
+
+<img src="screenshots/SS-30.jpg">
+
+You can see that the widget is now added to the dashboard.
+
+<img src="screenshots/SS-31.jpg">
+
+##### Step 6. Enter the edit mode by clicking the edit icon on the right bottom of dashboard screen.
+
+<img src="screenshots/SS-32.jpg">
+
+You will now get the edit option for the widget.
+
+<img src="screenshots/SS-33.jpg">
+
+##### Step 7. Click on the edit icon of the widget.
+
+<img src="screenshots/SS-34.jpg">
+
+##### Step 8. Click on the edit icon for Timeseries
+
+<img src="screenshots/SS-35.jpg">
+
+##### Step 9. Change the Label to A1 to reflect the first asset.
+
+<img src="screenshots/SS-36.jpg">
+
+##### Step 10. Click the right icon to apply changes
+
+<img src="screenshots/SS-37.jpg">
+
+##### Step 11. Finally, the widget will look like this.
+
+<img src="screenshots/SS-38.jpg">
+
+This is the widget for showing the status of first asset (A1)
+
+You need to perform the above steps ( from step 2 above) to create widget for A2 and A3. For this you have to 
+
+create the widget separately from the attributes list of data record by selecting the second record (for A2) and 
+
+third record (for A3).
+
+<img src="screenshots/SS-39.jpg">
+
+The final set of widgets for the three assets will look like this
+
+<img src="screenshots/SS-40.jpg">
+
+ 
