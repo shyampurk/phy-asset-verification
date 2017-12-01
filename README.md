@@ -129,4 +129,99 @@ The ThingsBoard configuration is done in three steps
 
 At this point, device creation is complete and we are receiving the actual data from hardware.
 
+#### Creating the Widget
+
+Now we have to create a widget for displaying the status of each BLE node.  Head over to the "WIDGETS LIBRARY" section in the ThingsBoard server portal.
+
+<img src="screenshots/SS-9.jpg">
+
+
+Follow the below steps to create a customized widget for displaying the presence status of the end nodes.
+
+##### Step  1. Under the "WIDGET LIBRARY" screen, click on the red "+" icon in the bottom right and choose "Create New Widgets 
+
+Bundle".
+
+<img src="screenshots/SS-10.jpg">
+
+
+##### Step 2. Enter the widget bundle name as shown in the screen below
+
+<img src="screenshots/SS-11.jpg">
+
+
+You will see the card representing the newly created widget bundle
+
+<img src="screenshots/SS-12.jpg">
+
+
+##### Step 3. Go back to the "DEVICES" screen, select the "FACTORY ASSET DEVICE" and choose the "ATTRIBUTES" tab
+
+<img src="screenshots/SS-13.jpg">
+
+
+##### Step 4. Select the first data attribute received from one of the end nodes and click on "SHOW ON WIDGET"
+
+<img src="screenshots/SS-14.jpg">
+
+
+##### Step 5. Select "Cards" from the "Current Bundle" dropdown option and choose the third style from the four available 
+
+styles.
+
+<img src="screenshots/SS-15.jpg">
+
+
+##### Step 6. Click on Add to Dashboard choose "Create New Dashboard" and enter the name as given and click "ADD".
+
+<img src="screenshots/SS-16.jpg">
+
+
+##### Step 7. Go to "WIDGET LIBRARY" screen and select the widge named "Cards" . 
+
+<img src="screenshots/SS-17.jpg">
+
+
+This is the predefined widget that we selected for dislaying the aseet status but we will modify it.
+
+##### Step 8. THis will open up a few widgets showing random data. We will use the Temp widget for our BLE end nodes.
+
+<img src="screenshots/SS-18.jpg">
+
+
+##### Step 9. Click on the edit icon on the Temp widget.
+
+<img src="screenshots/SS-19.jpg">
+
+
+This will open up the code editing screen for the widget. 
+
+<img src="screenshots/SS-20.jpg">
+
+##### Step 10. Now we need to replace the Javascript and CSS code with our code. 
+
+<img src="screenshots/SS-21.jpg">
+
+##### Step 11..Copy the <js> code and <css> code and paste it in the respective code windoow replacing the existing code 
+
+completely and click on the "SAVE AS" button on the top.
+
+<img src="screenshots/SS-22.jpg">
+
+##### Step 12. You have to give a new title for the widget and add it to an widget bundle as follows
+
+<img src="screenshots/SS-23.jpg">
+
+Once done, you will see your newly created widget as shown below
+
+<img src="screenshots/SS-24.jpg">
+
+##### Step 13. Now, head over to the "WIDGETS LIBRARY" and select "FACTORY ASSET". You will now see the asset widget as per 
+
+the new design and style that we did in step 10 and 11 above.
+
+<img src="screenshots/SS-25.jpg">
+
+You have successfully created the widget. Now lets add it to a dashboard.
+
 
