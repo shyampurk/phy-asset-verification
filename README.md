@@ -97,35 +97,35 @@ The ThingsBoard configuration is done in three steps
 
 ##### Step 1. Login to the Thingsboard Server Portal. The home screen will launch
 
-<img src="SS-1.jpg">
+<img src="screenshots/SS-1.jpg">
 
 ##### Step 2. Go to the Device Menu and click on the red "+" icon in the bottom right to create a new device.
 
-<img src="SS-2.jpg">
+<img src="screenshots/SS-2.jpg">
 
-<img src="SS-3.jpg">
+<img src="screenshots/SS-3.jpg">
 
 ##### Step 3. Enter the device name and description as given below
 
-<img src="SS-4.jpg">
+<img src="screenshots/SS-4.jpg">
 
 ##### Step 4. You can see the newly created device card 
 
-<img src="SS-5.jpg">
+<img src="screenshots/SS-5.jpg">
 
 ##### Step 5. Click on the device card and click on manage credentials
 
-<img src="SS-6.jpg">
+<img src="screenshots/SS-6.jpg">
 
 ##### Step 6. Copy the Access Token and save it in a text file.
 
-<img src="SS-7.jpg">
+<img src="screenshots/SS-7.jpg">
 
  - Paste the access token in the Linkit ONE program (mentioned in "STEP 3 : BLE Application Application Code Config" under "Programming the Linkit ONE Device" section above) and then perform the procedure to execute the program in LinkitONE.
    
    The hardware will now start publishing the end node's MAC ID along with the presence status. 
 
-<img src="SS-8.jpg">
+<img src="screenshots/SS-8.jpg">
 
 At this point, device creation is complete and we are receiving the actual data from hardware.
 
