@@ -66,10 +66,18 @@ You will have to edit the following Macros/variables in the source code as per y
 
 Connect your LinkItONE device via USB cable and select Serial Debug COM port in Arduino IDE. Compile and Upload your sketch to the device using “Upload” button. Once the application starts, it will try to connect to ThingsBoard server using MQTT. Refer to the steps below to deploy ThingsBoard server to receive the messages from the Linkit ONE.
 
-#### Troubleshooting
+##### Troubleshooting
 
 When the application is running, you can connect your device to Serial Debug COM port in Arduino IDE and open “Serial Monitor” in order to view debug information produced by serial output.
 
+
+#### Programming the Cypress 4.1 PSoC BLE Node
+
+You will need PSoC Designer for this.
+
+Follow this link to get the [getting started guide](http://www.cypress.com/documentation/other-resources/psoc-designer-quick-start-guide)
+
+The code used for progralling is based on this [EddyStone sample program](https://github.com/cypresssemiconductorco/PSoC-4-BLE/blob/master/100_Projects_in_100_Days/Project050_Eddystone/Eddystone/Eddystone_EH_Kit.cydsn/Eddystone.c). 
 
 ### Setup For Application Server
 
@@ -83,7 +91,7 @@ Install the Thingsboard service [as per your Operating System](https://thingsboa
 
 Follow this [guide](https://thingsboard.io/docs/getting-started-guides/helloworld/) to get started with building application dashboards with ThingsBoard. If you want to head straight to building the widget dashboard for this application then you can skip this and follow along the next section.
 
-### Setup Dashboard Widget Application Server
+### Setup For Dashboard Widget Application Server
 
 The ThingsBoard configuration is done in three steps
 
