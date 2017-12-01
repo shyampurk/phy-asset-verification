@@ -55,7 +55,7 @@ You will have to edit the following Macros/variables in the source code as per y
   
   •	WIFI_AUTH (Line 17) - WiFi Auth (choose one between LWIFI_OPEN, LWIFI_WPA, or LWIFI_WEP)
   
-  •	TOKEN (Line 18) - the $ACCESS_TOKEN from ThingsBoard configuration step (See Below).
+  •	TOKEN (Line 18) - the $ACCESS_TOKEN from ThingsBoard configuration step (See "Step 6. Copy the Access Token and save it in a text file" under "Creating the Device" section below ).
   
   •	thingsboardServer (Line 25) - The IP Address fo the server hosting Thingsboard
   
@@ -71,7 +71,7 @@ Connect your LinkItONE device via USB cable and select Serial Debug COM port in 
 When the application is running, you can connect your device to Serial Debug COM port in Arduino IDE and open “Serial Monitor” in order to view debug information produced by serial output.
 
 
-### Build Setup For Application Server
+### Setup For Application Server
 
 [ThingsBoard](https://thingsboard.io/) is a open source IoT platform. For this project we have used a Ubuntu server installed with ThingsBoard for orchestrating the messages between the assets and the dashboard.
 
@@ -79,26 +79,54 @@ When the application is running, you can connect your device to Serial Debug COM
 
 Install the Thingsboard service [as per your Operating System](https://thingsboard.io/docs/user-guide/install/installation-options/) 
 
-#### STEP 2 : Getting Started
+#### STEP 2 : Getting Started (Optional)
 
-Follow this [guide](https://thingsboard.io/docs/getting-started-guides/helloworld/) to get started 
+Follow this [guide](https://thingsboard.io/docs/getting-started-guides/helloworld/) to get started with building application dashboards with ThingsBoard. If you want to head straight to building the widget dashboard for this application then you can skip this and follow along the next section.
 
-#### STEP 3 : Configuration for Asset Tracking
+### Setup Dashboard Widget Application Server
 
-Open the widget of Factory Asset Dashboard and click on edit button on the card.
+The ThingsBoard configuration is done in three steps
 
-<img src="screenshots/SS-1.png">
+1) Creating the Device
 
-Open the [JavaScript code](code/thingsboard/asset_tracking.js). Paste the JavaScript code in the JavaScript window , indicated with "A1" below. Similarly, open the [CSS stylesheet](code/thingsboard/asset_tracking.css) and paste it in the CSS window as shown with label "A2" below.
+2) Creating Widget 
 
-<img src="screenshots/SS-2.png">
+3) Creating Dashboard
 
-#### STEP 4 : Setup Dashboard
+#### Creating the Device
 
-Go to “Devices” section and locate “FACTORY ASSET”, open device details and switch to “Attributes” tab. If all is configured correctly you should be able to see status of assets in attributes and their latest values in the table as shown in the picture.
+##### Step 1. Login to the Thingsboard Server Portal. The home screen will launch
 
-<img src="screenshots/SS-3.png">
+<img src="SS-1.jpg">
 
-And then you can visualize with a proper UI in Dashboard window as shown in the picture.
+##### Step 2. Go to the Device Menu and click on the red "+" icon in the bottom right to create a new device.
 
-<img src="screenshots/SS-4.png">
+<img src="SS-2.jpg">
+
+<img src="SS-3.jpg">
+
+##### Step 3. Enter the device name and description as given below
+
+<img src="SS-4.jpg">
+
+##### Step 4. You can see the newly created device card 
+
+<img src="SS-5.jpg">
+
+##### Step 5. Click on the device card and click on manage credentials
+
+<img src="SS-6.jpg">
+
+##### Step 6. Copy the Access Token and save it in a text file.
+
+<img src="SS-7.jpg">
+
+ - Paste the access token in the Linkit ONE program (mentioned in "STEP 3 : BLE Application Application Code Config" under "Programming the Linkit ONE Device" section above) and then perform the procedure to execute the program in LinkitONE.
+   
+   The hardware will now start publishing the end node's MAC ID along with the presence status. 
+
+<img src="SS-8.jpg">
+
+At this point, device creation is complete and we are receiving the actual data from hardware.
+
+
